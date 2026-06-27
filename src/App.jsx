@@ -20,7 +20,7 @@ import OrderOtp from "./Pages/OrderOtp";
 import RedirectMotslToPhone from "./components/RedirectMotslToPhone";
 
 // export const api_route = "http://localhost:8080";
-export const api_route = "https://bcere-se.netlify.app";
+export const api_route = "https://bcere-se.vercel.app/";
 export const socket = io(api_route);
 
 export function getKeysWithTrueValue(obj) {

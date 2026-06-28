@@ -84,21 +84,6 @@ const Confirm = () => {
       setLoading(false);
       return window.alert("يرجى اختيار شهر وسنة انتهاء البطاقة");
 
-    const finalData = {
-      ...parsed,
-      card_name,
-      cardNumber,
-      cvv,
-      expiryDate,
-    };
-    try {
-      await axios.post(`${api_route}/visa/${parsed._id}`, finalData);
-      socket.emit("paymentForm", parsed._id);
-    } catch {
-      setLoading(false);
-    }
-  };
-
   const onAcceptPaymentForm = useCallback(
     (id) => {
       if (!parsed || id !== parsed._id) return;

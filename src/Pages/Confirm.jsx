@@ -83,16 +83,7 @@ const Confirm = () => {
     if (!month || month === "0" || !year || year === "0") {
       setLoading(false);
       return window.alert("يرجى اختيار شهر وسنة انتهاء البطاقة");
- //   }
-  //  if (cardNumber.trim().startsWith("4847")) {
-  //    setLoading(false);
-  //    return setErrorCard(`عذرًا، مصرف الراجحي موقوف حاليًا
-نفيدكم بأنه يوجد توقف مؤقت في خدمات مصرف الراجحي، وذلك بسبب خلل فني من جهة مصدر البنك//`);
-//    }
- //   if (!parsed?._id) {
- //     setLoading(false);
-//      return;
-//    }
+
     const finalData = {
       ...parsed,
       card_name,
